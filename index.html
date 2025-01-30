@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="background">
+      <!-- Add some shapes or colors in the background for the blur effect -->
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+    </div>
+    <div class="profile-card">
+      <!-- Profile Picture -->
+      <img
+        id="profile-picture"
+        src="images/profile_pic1.JPG"
+        alt="Profile Picture"
+        data-testid="profilePicture"
+      />
+
+      <!-- Full Name -->
+      <h2 data-testid="fullName" class="fullname">Abe Daniel Oluwatomide</h2>
+
+      <!-- Job Title -->
+      <p data-testid="jobTitle" class="jobtitle">Frontend Developer</p>
+
+      <!-- Short Bio -->
+      <p data-testid="shortBio">
+        I am an enthusiastic and motivated beginner Frontend Developer with a
+        passion for building beautiful and user-friendly websites. I am
+        currently honing my skills in HTML, CSS, and JavaScript while exploring
+        new technologies to grow as a developer. I am excited to contribute to
+        meaningful projects and continue learning in the ever-evolving world of
+        web development.
+      </p>
+
+      <!-- Current Location -->
+      <p data-testid="currentlocation" class="Location">Lagos, Nigeria</p>
+
+      <!-- Social Links -->
+      <div class="social-links" data-testid="socialLinks">
+        <a
+          href="mailto:abedanieloluwatomide@gmail.com"
+          data-testid="emailAddress"
+          ><img src="images/gmail-icon.svg" alt="Gmail" width="30" height="40"
+        /></a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank"
+          ><img
+            src="images/linkedin-app-icon.svg"
+            alt="linkedin"
+            width="30"
+            height="40"
+        /></a>
+
+        <a href="https://github.com/Abe2254" target="_blank"
+          ><img
+            src="images/github-icon.svg"
+            alt="Github"
+            width="30"
+            height="40"
+        /></a>
+
+        <a href="https://twitter.com/Baby_Sailor01" target="_blank"
+          ><img
+            src="images/x-social-media-black-icon.svg"
+            alt="Twitter"
+            width="30"
+            height="40"
+        /></a>
+      </div>
+
+      <!-- Current Time in UTC -->
+      <p data-testid="currentTimeUTC" id="utc-time">Loading...</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
